@@ -38,6 +38,7 @@ class GitHubRepo
 {
     constructor(data) {
         this.name = data.name;
+        this.description = data.description;
         this.isFork = data.fork;
         this.stars = data.stargazers_count;
         this.watches = data.watchers_count;
