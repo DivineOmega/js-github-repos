@@ -1,0 +1,15 @@
+{
+  "name": "js-github-repos",
+  "version": "1.0.0",
+  "description": "JavaScript library for accessing public information about GitHub repositories",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DivineOmega/js-github-repos.git"
+  },
+  "author": "Jordan Hall <jordan@hall05.co.uk>",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/DivineOmega/js-github-repos/issues"
+  },
+  "homepage": "https://github.com/DivineOmega/js-github-repos#readme"
+}
