@@ -5,19 +5,23 @@
     </head>
     <body>
         <p>Test page, see the console.</p>
-        
+
         <script src="GitHubRepos.js"></script>
         <script>
             (function() {
+                
                 var gitHubRepos = new GitHubRepos;
 
+                gitHubRepos.getRepo('DivineOmega', 'js-github-repos', function(repo) {
+                    console.log('Got specific repo by name:');
+                    console.log(repo);
+                })
+
                 gitHubRepos.getUserRepos('DivineOmega', function(repos) {
+                    console.log('Got all repos for user:');
                     console.log(repos);
                 });
 
-                gitHubRepos.getRepo('DivineOmega', 'js-github-repos', function(repo) {
-                    console.log(repo);
-                })
             })();
         </script>
     </body>
