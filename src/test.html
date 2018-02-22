@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>js-github-repos test</title>
+    </head>
+    <body>
+        <p>Test page, see the console.</p>
+        
+        <script src="GitHubRepos.js"></script>
+        <script>
+            (function() {
+                var gitHubRepos = new GitHubRepos;
+
+                gitHubRepos.getUserRepos('DivineOmega', function(repos) {
+                    console.log(repos);
+                });
+
+                gitHubRepos.getRepo('DivineOmega', 'js-github-repos', function(repo) {
+                    console.log(repo);
+                })
+            })();
+        </script>
+    </body>
+</html>
