@@ -41,7 +41,6 @@ class GitHubRepo
         this.description = data.description;
         this.isFork = data.fork;
         this.stars = data.stargazers_count;
-        this.watches = data.watchers_count;
         this.forks = data.forks;
         this.language = data.language;
         this.license = null;
