@@ -48,6 +48,10 @@ class GitHubRepo
         if (data.license && data.license.name) {
             this.license = data.license.name;
         }
+        this.license_spdx = null;
+        if (data.license && data.license.spdx_id) {
+            this.license_spdx = data.license.spdx_id;
+        }
         this.url = data.html_url;
         this.archived = data.archived;
     }
