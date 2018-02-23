@@ -38,6 +38,7 @@ class GitHubRepo
 {
     constructor(data) {
         this.name = data.name;
+        this.fullName = data.full_name;
         this.description = data.description;
         this.isFork = data.fork;
         this.stars = data.stargazers_count;
@@ -51,6 +52,7 @@ class GitHubRepo
         if (data.license && data.license.spdx_id) {
             this.license_spdx = data.license.spdx_id;
         }
+        this.owner = data.owner.name;
         this.url = data.html_url;
         this.archived = data.archived;
     }
