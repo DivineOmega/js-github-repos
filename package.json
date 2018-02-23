@@ -1,6 +1,6 @@
 {
   "name": "js-github-repos",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "JavaScript library for accessing public information about GitHub repositories",
   "repository": {
     "type": "git",
