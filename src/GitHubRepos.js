@@ -52,7 +52,7 @@ class GitHubRepo
         if (data.license && data.license.spdx_id) {
             this.license_spdx = data.license.spdx_id;
         }
-        this.owner = data.owner.name;
+        this.owner = data.owner.login;
         this.url = data.html_url;
         this.archived = data.archived;
     }
